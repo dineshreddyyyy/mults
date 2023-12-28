@@ -1,0 +1,245 @@
+ *{
+     margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 2s linear;
+}
+section{
+    padding: 2rem 9%;
+}
+.home button{
+    font-size: 1.6rem;
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: red;
+    color: black;
+    padding: 5px 11px;
+    cursor: pointer;
+
+}
+.home button:hover{
+    background-color: violet;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color:white;
+    padding:0;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    text-align: center;
+    z-index: 1000;
+
+    box-shadow: 0.5rem 2rem rgba(0,0,0,.1);
+}
+header .logo{
+    font-size: 40px;
+    color: blue;
+    font-weight: bolder;
+   
+}
+header .logo span{
+    color: var;
+    color: black;
+    
+}
+header .navbar a{
+    font-size:30px ;
+    padding: 40px;
+    color: black;
+ 
+}
+header .navbar a:hover{
+    color:greenyellow;
+    
+}
+header .icons a{
+    font-size: 40px;
+    color:blue;
+    margin-left:20px ;
+padding: 0;
+    float: right;
+}
+header .icons a:hover{
+    color: black;
+}
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: 5rem 1.5rem;
+    cursor: pointer;
+    border:.1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+
+
+
+.home{
+  display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://wallpapercave.com/wp/MgMYE5Z.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    max-width: 50rem;
+}
+.home .content h3{
+    font-size: 4rem;
+    color: aliceblue;
+}
+.home h1{
+    color: red;
+    font-size: 60px;
+}
+.home .content span{
+    font-size: 3.5rem;
+    color:deeppink;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+.home p{
+    font-size: 20px;
+    color:black;
+    padding: 1rem 0;
+    line-height: 1.5;
+    font-family: fantasy;
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+        
+    }header{
+        padding: 2rem;
+    }
+     section{
+        padding: 2rem;
+    }
+    .home{
+        background-position: center;
+    }
+}
+
+@media(max-width:768px){
+    header .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header #toggler:checked~ .navbar{
+        clip-path:  polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: 1rem solid  rgba(0,0,0,.1);
+        display: block;
+    }
+}
+
+.About{
+  display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://wallpapercave.com/wp/MgMYE5Z.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+.Contact{
+  display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://wallpapercave.com/wp/MgMYE5Z.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+.About-text p{
+    color: black;
+    font-size: 25px;
+    font-family: fantasy;
+}
+
+
+
+
+
+    .fa{
+    padding:10px;
+    font-size:20px;
+    width:40px;
+    text-align:center;
+    text-decoration:none;
+    margin: 5px 2px;
+    border-radius:50%;
+}
+
+.fa:hover{
+    opacity:0.7;
+
+}
+.fa-facebook{
+    background: #0920eb;
+    color: aliceblue;
+}
+    .fa-linkedin{
+    background: #0920eb;
+    color: aliceblue;
+}
+.fa-instagram{
+    background: #eb098d;
+    color: aliceblue;
+}
+.fa-twitter{
+    background:#0942eb;
+    color: aliceblue;
+}
+.fa-Whatsapp{
+    background:#25F001;
+    color: aliceblue;
+}
+.navbar{
+    background-color: blue;
+}
+
+
+
+footer{
+    width: 100%;
+    background:blue;
+    color:black;
+    font-size: 20px;
+}
+.container{
+    width:100px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.footer-container{
+    width:33.3%;
+    padding: 30px;
+}
+footer-content h3{
+    width: 400px;
+    padding-left:  20px;
+}
